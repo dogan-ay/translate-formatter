@@ -5,10 +5,12 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
     sendResponse('test');
 });
 
-const textarea = document.querySelector('textarea')
+
 
 function formatter() {
-    const text = textarea.innerHTML;
-    console.log(textarea.innerHTML)
-    
+    let textarea = document.querySelector('textarea');
+    let text = textarea.value;
+    text = text.replace(/\n/g,' ');
+    textarea.value = text;    
+    textarea.innerHTML = text;
 }
