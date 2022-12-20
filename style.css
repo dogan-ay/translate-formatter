@@ -1,55 +1,54 @@
 body {
-    width: 15rem;
-    background-color: whitesmoke;
-    font-family: 'Inter';
+    width: 12rem;
+    font-family: 'Gotu';
     text-align: center;
     user-select: none;
+    margin: 0;
+    padding: 0;
 }
 
-header {
+p {
+    margin: 0;
+}
+
+main {
+    background-color: #D4DBE2;
+    width: 100%;
+    height: 10rem;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 0 1rem;
-}
-
-header > img {
-   width: 20%;     
-}
-
-h1 {
-    font-size: 1rem;
-    color: 	#222222;
 }
 
 section {
-    background-color: white;
-    color: #606870;
-    font-size: 0.7rem;
-    border-radius: 0.3rem;
-    padding: 1rem;
-    margin: 1rem 1rem;
+    background: #E4E5EA;
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icon {
+    width: 35%;
+}
+
+.icon > img {
+    width: 100%;
 }
 
 .button {
-    width: 100%;
-    background-color: #222222;
-    height: 2.5rem;
+    background: #0C151C;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 90%;
     border-radius: 50px;
+    height: 2.5rem;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
-    margin-bottom: 1rem;
-}
-
-.button > p {
-    color: whitesmoke;
-    font-family: 'Mulish';
-    font-size: 1.2rem;
-    line-height: 0;
-    margin-right: 0;
-}
-
-.button > p::before {
-    content: '⚡';
 }
