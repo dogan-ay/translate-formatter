@@ -9,6 +9,7 @@
             "16": "icon16.png"
         }
 
+
     },
     "icons": {
         "16": "icon16.png",
@@ -22,8 +23,9 @@
     ],
     "content_scripts": [
         {
-          "matches": ["https://*/*"],
+          "matches": ["https://translate.google.com/*"],
           "js": ["scripts/formatter.js"]
         }
     ]
+   
   }
